@@ -21,7 +21,7 @@ function Extension() {
                 isShowDetail ? (
                     variant.length > 0 ? (
                         variant.map((val, index) => <s-stack key={index}>
-                            <s-image src={val.merchandise.image.url} alt={val.merchandise.image.altText} inlineSize="auto" borderRadius='small' loading='lazy' />
+                            <s-image src={val.merchandise.image.url} alt={val.merchandise.image.altText} inlineSize="auto" borderRadius='large' loading='eager' />
                             <s-text>{`${val.merchandise.product.productType}: ${val.quantity}`}</s-text>
                         </s-stack>)
                     ) : (
