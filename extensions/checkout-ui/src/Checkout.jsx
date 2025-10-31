@@ -11,7 +11,7 @@ function Extension() {
 
   useEffect(() => {
     const unsubscribe = shopify.buyerJourney.intercept(({canBlockProgress}) => {
-      console.log('canBlockProgress:', canBlockProgress, 'checked:', checked)
+      // console.log('canBlockProgress:', canBlockProgress, 'checked:', checked)
       if (!canBlockProgress) {
         return {
           behavior: "allow",

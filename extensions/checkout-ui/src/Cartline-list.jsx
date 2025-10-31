@@ -10,8 +10,6 @@ function Extension() {
     let variant = shopify.lines.value;
     const [isShowDetail, setShowDetail] = useState(false);
 
-    console.log('===>', isShowDetail)
-
     return (
         <s-stack gap='base'>
             <s-button onClick={() => setShowDetail(!isShowDetail)}>
